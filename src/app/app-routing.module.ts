@@ -11,6 +11,19 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'technology',
+    loadChildren: () => import('./technology/technology.module').then( m => m.TechnologyPageModule)
+  },
+  {
+    path: 'mood',
+    loadChildren: () => import('./mood/mood.module').then( m => m.MoodPageModule)
+  },  {
+    path: 'racing',
+    loadChildren: () => import('./racing/racing.module').then( m => m.RacingPageModule)
+  },
+
+
 ];
 
 @NgModule({

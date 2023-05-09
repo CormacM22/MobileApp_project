@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Latest In Technology</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--Content-->
+<ion-content>
+
+  <!--Displays The Data-->
+  <ion-card *ngFor="let tech of TechnologyData">
+    <img length="700" width="400" src="{{tech.image_url}}">
+    <ion-card-header>
+      <ion-card-subtitle>{{tech.pubDate}}</ion-card-subtitle>
+      <ion-card-title>{{tech.title}}</ion-card-title>
+      <ion-card-subtitle>{{tech.content}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card> 
+  
+</ion-content>

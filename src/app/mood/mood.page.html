@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-undo" text="back"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-size: 40px;">Welcome To The Mood Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <!--Title -->
+<ion-title style="font-size: 25px">My Mood is {{myMood}}</ion-title>
+<ion-list>
+  
+  <ion-radio-group [(ngModel)]="myMood">
+    <ion-list-header>
+      <ion-label style="font-size: 25px">Choose A Mood: </ion-label>
+    </ion-list-header>
+
+    <!--Moods-->
+    <ion-item>
+      <ion-label>Happy</ion-label>
+      <ion-radio slot="start" value="Happy"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sad</ion-label>
+      <ion-radio slot="start" value="Sad"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Angry</ion-label>
+      <ion-radio slot="start" value="Angry"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+
+<!--Save Button-->
+<ion-button (click)="SaveMood()">Save</ion-button>
+
+</ion-content>

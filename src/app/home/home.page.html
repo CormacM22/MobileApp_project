@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      The News Page
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,31 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">News</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
-  </div>
+  <!-- Goes to My Mood Page// To Save Data -->
+  <br>
+  <h1>You're Mood Today is: {{myMood}}</h1>
+  <br>
+  <ion-button [routerLink]="['/mood']">Log Your Mood</ion-button>
+  <br>
+  <br>
+
+
+  <!-- Displays the best racing teams of f1 this year -->
+  <img length="700" width="400" src="https://cdn.abcdoabc.com.br/formula-1-red-bull-e-mercedes-24-06_27e93d01.jpg"/> 
+  <br>
+  <ion-button [routerLink]="['/racing']">Latest Formula 1</ion-button>
+  <br>
+  <br>
+
+  <!-- latest technology news -->
+  <img length="700" width="400" src="https://getwallpapers.com/wallpaper/full/1/d/d/765263-beautiful-technology-background-images-1920x1200.jpg"/> 
+  <br>
+  <ion-button [routerLink]="['/technology']">Latest In Technoology</ion-button>
+  <br>
+
+  
 </ion-content>
