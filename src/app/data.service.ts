@@ -13,6 +13,6 @@ export class DataService {
 
   //Get the technolgoy data
   GetTechnologyData():Observable<any>{
-    return this.httpClient.get('https://newsdata.io/api/1/news?apikey=pub_7283dde1f44cbddcd4ff494794f8f38ef04b&q=new%20tech&language=en')
+    return this.httpClient.get('https://newsdata.io/api/1/news?apikey=pub_22035a54a771960915ba07cdf7beb028c4cbf&q=technology')
   }
 }
